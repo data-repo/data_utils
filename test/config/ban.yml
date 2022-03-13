@@ -1,0 +1,37 @@
+
+#------------------------------
+#|     Ban Checker Config     |
+#------------------------------
+
+proxies:
+  http: socks5://127.0.0.1:9050
+  https: socks5://127.0.0.1:9050
+url: https://www.binance.com/bapi/composite/v1/public/marketing/symbol/list
+params:
+payload:
+headers:
+    authority: www.binance.com
+    x-trace-id: 49033b57-c53e-46d5-850b-9f2c13f26935
+    csrftoken: d41d8cd98f00b204e9800998ecf8427e
+    x-ui-request-trace: 49033b57-c53e-46d5-850b-9f2c13f26935
+    user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36
+    content-type: application/json
+    lang: en
+    fvideo-id: 314d1d12b309a1d4b9682fe3f798030cf9396243
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua: '"Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"'
+    device-info: eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ==
+    bnc-uuid: 962f7090-d619-4dfe-844d-10db1aa966e3
+    clienttype: web
+    sec-ch-ua-platform: Linux
+    accept: "*/*"
+    sec-fetch-site: same-origin
+    sec-fetch-mode: cors
+    sec-fetch-dest: empty
+    referer: https://www.binance.com/en/markets
+    accept-language: fa,en-US;q=0.9,en;q=0.8,de;q=0.7
+    cookie: home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; fiat-prefer-currency=EUR; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; monitor-uuid=dc923f22-5cba-48b2-b616-05838dfadd64; userPreferredCurrency=ARS_USD; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; lang=en; gtId=cb1cc852-1dfa-4250-abe8-1c912c90b7da; defaultMarketTab=spot; _gat=1
+
+logger:
+  level: noset
+  format: json

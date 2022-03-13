@@ -1,0 +1,15 @@
+
+#------------------------------
+#|       Logger Config        |
+#------------------------------
+# Format string | json
+
+level: noset
+format: json
+
+kafka:
+  active: true
+  producer:
+    topic: logger
+    bootstrap_servers:
+      - localhost:9092

@@ -1,0 +1,12 @@
+
+#------------------------------
+#|       MongoDB Config       |
+#------------------------------
+
+host: localhost
+port: 27017
+username: admin
+password: admin123
+database: test
+min_connections_count: 10
+max_connections_count: 10

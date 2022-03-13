@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rad-data
+Version: 0.1.4
+Summary: Base package for crawler in data team
+Home-page: https://scm.cepitadev.com
+Author: Data team group
+Author-email: rad.company@data.com
+License: RAD
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+## Base package
+
+- this project created for base of tools and utils in data team.
+
+
+### References
+
+- [Setup package] https://towardsdatascience.com/create-your-custom-python-package-that-you-can-pip-install-from-your-git-repository-f90465867893
+
+

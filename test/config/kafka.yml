@@ -1,0 +1,11 @@
+
+#------------------------------
+#|        Kafka Config        |
+#------------------------------
+
+producer:
+  bootstrap_servers:
+    - 192.168.62.22:9092
+#  schema:
+#    registry: http://192.168.62.22:8081
+#    file: schema/avro/orderEventSchema.avsc
