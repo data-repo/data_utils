@@ -13,7 +13,7 @@ class KafkaAdmin(object):
     """
     Kafka admin
     """
-    def __init__(self, config: str or Bunch) -> None:
+    def __init__(self) -> None:
         """
         Initialize Kafka admin class
         """
