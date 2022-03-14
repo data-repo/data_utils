@@ -172,8 +172,8 @@ class KafkaAvroConnector(object):
                 "config": {
                     "topics": topic,
                     "pk.fields": primary_key,
-                    "auto.create": "true",
-                    "insert.mode": "upsert",
+                    "auto.create": "false",
+                    "insert.mode": "insert",
                     "pk.mode": "record_value",
                     "table.name.format": f"{table_name}",
                     "connection.url": timescale_connection_url,
