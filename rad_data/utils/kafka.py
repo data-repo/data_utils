@@ -1,4 +1,3 @@
-
 import requests
 from hashlib import md5
 from typing import List
@@ -6,13 +5,14 @@ import rad_data.utils.helper as hp
 from rad_data.utils.bunch import Bunch
 from confluent_kafka import avro
 from confluent_kafka import admin
-import config as cfg 
+import config as cfg
 
 
 class KafkaAdmin(object):
     """
     Kafka admin
     """
+
     def __init__(self) -> None:
         """
         Initialize Kafka admin class
@@ -35,9 +35,9 @@ class KafkaAdmin(object):
                 # "min.compaction.lag.ms": cfg.topic_min_compaction_lag_ms
             }
             new_topic = admin.NewTopic(topic=topic,
-                                                   num_partitions=cfg.KAFKA_TOPIC_NUM_PARTITIONS,
-                                                   replication_factor=cfg.KAFKA_TOPIC_REPLICATION_FACTOR,
-                                                   config=config)
+                                       num_partitions=cfg.KAFKA_TOPIC_NUM_PARTITIONS,
+                                       replication_factor=cfg.KAFKA_TOPIC_REPLICATION_FACTOR,
+                                       config=config)
             self._admin.create_topics([new_topic, ])
             print(f"Create topic {topic} successfully")
             return True
@@ -74,7 +74,7 @@ class KafkaAvroProducer(object):
         self._producer = None
         self._value_schema = value_schema
         self._key_schema = '{"type": "string"}'
-        
+
     def __enter__(self):
         """
         Create kafka producer session
@@ -152,8 +152,9 @@ class KafkaAvroConnector(object):
     """
     Kafka avro connector
     """
+
     def create_connector(self, name: str, topic: str, primary_key: str, db_name: str, table_name: str,
-                         transforms: dict = None) -> bool:
+                         transforms: dict = None, insert_mode: str = "upsert") -> bool:
         """
         Create connector and send data from kafka to database
         """
@@ -173,7 +174,7 @@ class KafkaAvroConnector(object):
                     "topics": topic,
                     "pk.fields": primary_key,
                     "auto.create": "false",
-                    "insert.mode": "insert",
+                    "insert.mode": insert_mode,
                     "pk.mode": "record_value",
                     "table.name.format": f"{table_name}",
                     "connection.url": timescale_connection_url,
