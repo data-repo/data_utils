@@ -3,8 +3,8 @@ import json
 import requests
 import traceback
 import concurrent
-from rad_data.utils.bunch import Bunch
-from rad_data.utils.logger import Logger
+from data_tools.utils.bunch import Bunch
+from data_tools.utils.logger import Logger
 from concurrent.futures import ProcessPoolExecutor
 import config as cfg 
 

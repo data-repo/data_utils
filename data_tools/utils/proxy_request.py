@@ -6,8 +6,8 @@ from pathlib import Path
 import requests
 
 import config as cfg
-from rad_data.utils.bunch import Bunch
-from rad_data.utils.logger import Logger
+from data_tools.utils.bunch import Bunch
+from data_tools.utils.logger import Logger
 
 
 class ProxyRequest:

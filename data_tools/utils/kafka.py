@@ -1,8 +1,8 @@
 import requests
 from hashlib import md5
 from typing import List
-import rad_data.utils.helper as hp
-from rad_data.utils.bunch import Bunch
+import data_tools.utils.helper as hp
+from data_tools.utils.bunch import Bunch
 from confluent_kafka import avro
 from confluent_kafka import admin
 import config as cfg

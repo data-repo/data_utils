@@ -5,7 +5,7 @@ import yaml
 import json
 from pathlib import Path
 from datetime import datetime
-from rad_data.utils.bunch import Bunch
+from data_tools.utils.bunch import Bunch
 
 os.environ['TZ'] = 'UTC'
 time.tzset()

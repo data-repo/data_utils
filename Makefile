@@ -9,7 +9,7 @@ CLOSE := "\033[0m"
 clean:
 	@echo $(RED)"Clean extra files and folders:"
 	@echo $(BLUE)" - Remove extra files and folders"$(CLOSE)
-	@$(shell rm -rf .pytest_cache dist rad_data.egg-info)
+	@$(shell rm -rf .pytest_cache dist egg-info)
 	@$(shell find . -type f -name "*.py[co]" -delete -o -type d -name __pycache__ -delete)
 
 setup:

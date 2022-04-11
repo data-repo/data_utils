@@ -1,6 +1,6 @@
 
 import unittest
-from rad_data.utils.kafka import KafkaDataProducer
+from data_tools.utils.kafka import KafkaDataProducer
 
 
 class KafkaTestCase(unittest.TestCase):

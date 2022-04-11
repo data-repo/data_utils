@@ -1,6 +1,6 @@
 
 import unittest
-from rad_data.utils.checker import SiteBanChecker
+from data_tools.utils.checker import SiteBanChecker
 
 
 class SiteBacCheckerTestCase(unittest.TestCase):

@@ -32,16 +32,16 @@ long_description = get_readme()
 # install_requires = get_poetry_packages()
 
 setuptools.setup(
-    name='rad_data',
+    name='data_tools',
     version='0.1.4',
-    packages=['rad_data', 'rad_data.utils'],
+    packages=['data_tools', 'data_tools.utils'],
     package_data={'': ['*/*', '*/*/*', '*/*/*/*']},
-    author='Data team group',
-    author_email='rad.company@data.com',
-    description='Base package for crawler in data team',
+    author='mohammad mahdi azadjalal',
+    author_email='data_tools.company@data.com',
+    description='Base package for crawler',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://scm.cepitadev.com',
-    license='RAD',
+    url='https://google.com',
+    license='ISC',
     install_requires=['pyyaml>=6.0', 'kafka-python>=2.0.2', 'requests>=2.26.0']
 )

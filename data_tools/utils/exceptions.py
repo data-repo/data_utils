@@ -1,4 +1,4 @@
-from rad_data.utils.logger import Logger
+from data_tools.utils.logger import Logger
 
 log = Logger()
 

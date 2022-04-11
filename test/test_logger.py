@@ -1,6 +1,6 @@
 
 import unittest
-from rad_data.utils.logger import Logger
+from data_tools.utils.logger import Logger
 
 
 class LoggerTestCase(unittest.TestCase):

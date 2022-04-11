@@ -1,8 +1,8 @@
 
 import time
 import unittest
-from rad_data.utils.logger import Logger
-from rad_data.utils.decorator import timer
+from data_tools.utils.logger import Logger
+from data_tools.utils.decorator import timer
 
 logger = Logger(config='test/config/logger.yml')
 

@@ -3,13 +3,13 @@ import os
 import json
 import inspect
 from enum import Enum
-from rad_data.utils.kafka import KafkaAvroProducer
-from rad_data.utils.bunch import Bunch
+from data_tools.utils.kafka import KafkaAvroProducer
+from data_tools.utils.bunch import Bunch
 from datetime import datetime
 from dataclasses import dataclass
-from rad_data.utils.kafka import KafkaAvroConnector
+from data_tools.utils.kafka import KafkaAvroConnector
 from dataclasses_avroschema import AvroModel
-import rad_data.utils.helper as hp
+import data_tools.utils.helper as hp
 import config as cfg
 import confluent_kafka.admin as kafka_admin
 

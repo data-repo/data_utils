@@ -1,7 +1,7 @@
 
 import logging
 import unittest
-from rad_data.utils.decorator import retry
+from data_tools.utils.decorator import retry
 
 
 class RetryableError(Exception):

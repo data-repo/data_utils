@@ -1,7 +1,7 @@
 
 import time
 from functools import wraps
-from rad_data.utils.logger import Logger
+from data_tools.utils.logger import Logger
 
 
 def retry(exception_check: Exception or tuple,
